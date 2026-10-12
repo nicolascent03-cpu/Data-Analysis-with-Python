@@ -1,0 +1,122 @@
+7 / 2; 3.5 (float)
+7 // 2; 3 (int)
+7 % 2; 1 (int)
+2 ** 3; 8 (int)
+10 / 5; 2.0 (float)
+type(10 / 5); <class 'float'>
+3 + 2.0; 5.0 (float)
+"3" + "2"; '32' (str)
+"ab" * 3; 'ababab' (str)
+int("12") + 3; 15 (int)
+int(3.9); 3 (int)
+float(2); 2.0 (float)
+str(10) + "!"; '10!' (str)
+int("7") + float("1.5"); 8.5 (float)
+type(3 > 2); <class 'bool'>
+type(None); <class 'NoneType'>
+type((1, 2)); <class 'tuple'>
+type({"a": 1}); <class 'dict'>
+type({1, 2}); <class 'set'>
+type([]); <class 'list'>
+type(""); <class 'str'>
+type(5 // 2); <class 'int'>
+10 == 10.0; True (bool)
+"5" == 5; False (bool)
+len("Zurich"); 6 (int)
+len([1, [2, 3]]); 2 (int)
+len({"a": 1, "b": 2}); 2 (int)
+True + True; 2 (int)
+abs(-4.5); 4.5 (float)
+round(3.567, 1); 3.6 (float)
+max([3, 9, 2]); 9 (int)
+min("zebra"); 'a' (str)
+sum([1, 2, 3]) / 3; 2.0 (float)
+"university"[1:4]; 'niv' (str)
+"university"[-1]; 'y' (str)
+"university"[::-1]; 'ytisrevinu' (str)
+"python"[::2]; 'pto' (str)
+"python"[-3:]; 'hon' (str)
+[10, 20, 30, 40][1:3]; [20, 30] (list)
+["a", "b", "c"][1]; 'b' (str)
+["a", "b", "c"][1:2]; ['b'] (list)
+[1, 2, 3][1:10]; [2, 3] (list)
+[[1, 2], [3, 4]][1][0]; 3 (int)
+"abcdef"[4:1:-1]; 'edc' (str)
+(1, 2, 3)[-1]; 3 (int)
+{"name": "Ana"}["name"]; 'Ana' (str)
+{"a": 1}.get("b"); None (NoneType)
+{"a": 1}.get("b", 0); 0 (int)
+"a" in {"a": 1}; True (bool)
+1 in {"a": 1}; False (bool)
+list({"x": 1, "y": 2}.keys()); ['x', 'y'] (list)
+list({"x": 1, "y": 2}.values()); [1, 2] (list)
+list({"x": 1}.items()); [('x', 1)] (list)
+"  Hi There ".strip().lower(); 'hi there' (str)
+"a b c".split(); ['a', 'b', 'c'] (list)
+"a,b,,c".split(","); ['a', 'b', '', 'c'] (list)
+"-".join(["a", "b", "c"]); 'a-b-c' (str)
+"banana".count("a"); 3 (int)
+"banana".replace("a", "o"); 'bonono' (str)
+"banana".find("n"); 2 (int)
+"data".upper(); 'DATA' (str)
+"zurich".title(); 'Zurich' (str)
+"Zurich".startswith("Z"); True (bool)
+sorted([3, 1, 2]); [1, 2, 3] (list)
+sorted("cab"); ['a', 'b', 'c'] (list)
+len(set([1, 2, 2, 3])); 3 (int)
+{1, 2, 3} & {2, 3, 4}; {2, 3} (set)
+{1, 2} | {2, 5}; {1, 2, 5} (set)
+[1, 2] + [3]; [1, 2, 3] (list)
+[0] * 3; [0, 0, 0] (list)
+list(range(5)); [0, 1, 2, 3, 4] (list)
+list(range(2, 8, 2)); [2, 4, 6] (list)
+list(range(5, 0, -2)); [5, 3, 1] (list)
+list(enumerate("ab")); [(0, 'a'), (1, 'b')] (list)
+list(zip([1, 2, 3], "xy")); [(1, 'x'), (2, 'y')] (list)
+[x ** 2 for x in range(4)]; [0, 1, 4, 9] (list)
+[x for x in range(10) if x % 3 == 0]; [0, 3, 6, 9] (list)
+["pass" if g >= 4 else "fail" for g in [3, 5]]; ['fail', 'pass'] (list)
+bool(""); False (bool)
+bool(" "); True (bool)
+bool("False"); True (bool)
+bool([]); False (bool)
+bool([0]); True (bool)
+bool(0.0); False (bool)
+bool(None); False (bool)
+not []; True (bool)
+"" or "default"; 'default' (str)
+0 and 5; 0 (int)
+3 and 7; 7 (int)
+None or 0; 0 (int)
+"pass" if 3.5 >= 4 else "fail"; 'fail' (str)
+print("hi"); prints hi and returns None (NoneType)
+[1, 2].append(3); None (NoneType)
+a = [1, 2] ⏎ b = a ⏎ b.append(3) ⏎ print(a); prints [1, 2, 3]
+a = [1, 2] ⏎ b = a.copy() ⏎ b.append(3) ⏎ print(a); prints [1, 2]
+a = [1, 2] ⏎ b = [1, 2] ⏎ print(a == b, a is b); prints True False
+x = 5 ⏎ y = x ⏎ x = x + 1 ⏎ print(y); prints 5
+nums = [3, 1, 2] ⏎ print(nums.sort()); prints None
+s = "hi" ⏎ s.upper() ⏎ print(s); prints hi
+L = [1, 2] ⏎ L.append([3, 4]) ⏎ print(len(L)); prints 3
+L = [1, 2] ⏎ L.extend([3, 4]) ⏎ print(len(L)); prints 4
+L = [1, 2, 3] ⏎ print(L.pop(), L); prints 3 [1, 2]
+d = {"a": 1} ⏎ d["a"] = 5 ⏎ print(d); prints {'a': 5}
+total = 0 ⏎ for n in [1, 2, 3]: total += n ⏎ print(total); prints 6
+for i in range(3): print(i, end=" "); prints 0 1 2 
+x = 1 ⏎ while x < 20: x = x * 3 ⏎ print(x); prints 27
+def f(x): print(x) ⏎ print(f(2)); prints 2 | None
+def f(a, b=10): return a + b ⏎ print(f(1), f(1, 2)); prints 11 3
+def f(L): L.append(9) ⏎ x = [1] ⏎ f(x) ⏎ print(x); prints [1, 9]
+def f(L): L = [] ⏎ x = [1] ⏎ f(x) ⏎ print(x); prints [1]
+total = 10 ⏎ def f(): total = 5 ⏎ f() ⏎ print(total); prints 10
+def s(*args): return sum(args) ⏎ print(s(1, 2, 3)); prints 6
+int("abc"); ValueError: invalid literal for int() with base 10: 'abc'
+"a" + 1; TypeError: can only concatenate str (not "int") to str
+[1, 2][5]; IndexError: list index out of range
+{"a": 1}["b"]; KeyError: 'b'
+10 / 0; ZeroDivisionError: division by zero
+len(5); TypeError: object of type 'int' has no len()
+(1, 2)[0] = 3; TypeError: 'tuple' object does not support item assignment
+[1].upper(); AttributeError: 'list' object has no attribute 'upper'
+undefined_name; NameError: name 'undefined_name' is not defined
+try: print(1 / 0) ⏎ except ZeroDivisionError: print("zero"); prints zero
